@@ -1,0 +1,6 @@
+framework module Pods_KinokzCopy_KinokzCopyUITests {
+  umbrella header "Pods-KinokzCopy-KinokzCopyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

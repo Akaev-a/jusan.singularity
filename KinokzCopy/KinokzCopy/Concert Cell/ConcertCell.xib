@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ConcertCell" customModule="KinokzCopy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BLm-iV-LFj">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="140" id="Nbu-gn-i86"/>
+                            <constraint firstAttribute="width" constant="250" id="ul7-h2-sux"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BLm-iV-LFj" secondAttribute="trailing" id="GZF-NR-a7g"/>
+                <constraint firstItem="BLm-iV-LFj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ow1-EW-Zhs"/>
+                <constraint firstAttribute="bottom" secondItem="BLm-iV-LFj" secondAttribute="bottom" id="aDH-gK-I5m"/>
+                <constraint firstItem="BLm-iV-LFj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bki-mv-Alw"/>
+            </constraints>
+            <size key="customSize" width="281" height="147"/>
+            <connections>
+                <outlet property="concertImage" destination="BLm-iV-LFj" id="9UZ-Zf-JF4"/>
+            </connections>
+            <point key="canvasLocation" x="-60.305343511450381" y="22.887323943661972"/>
+        </collectionViewCell>
+    </objects>
+</document>
