@@ -36,3 +36,5 @@ let calt = Calculate(number1: [1, 5, 6, 2, 3])
 print(calt.add())
 print(calt.mult())
 print(calt.sortArray())
+
+
