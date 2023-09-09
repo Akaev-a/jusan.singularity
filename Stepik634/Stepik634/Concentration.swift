@@ -7,7 +7,7 @@
 
 import Foundation
 
-Class Concentration {
+class Concentration {
     var cards: [Card] = []
     
     init(numberOfPairsOfCards: Int) {
@@ -15,7 +15,6 @@ Class Concentration {
             let card = Card()
             cards += [card, card]
         }
-    //
     }
     func chooseCard (at index: Int) {
         cards[index].isFaceUp.toggle()

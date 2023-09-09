@@ -10,7 +10,7 @@ import Foundation
 struct Card {
     var isFaceUp = false
     var isMatchet = false
-    var identifeir: Int
+    var identifier: Int
     
     static var identifeirFactory = 0
     static func getUniqueIdentifeir() -> Int {
@@ -18,6 +18,6 @@ struct Card {
         return identifeirFactory
     }
     init() {
-        self.identifeir = Card.getUniqueIdentifeir()
+        self.identifier = Card.getUniqueIdentifeir()
     }
 }
