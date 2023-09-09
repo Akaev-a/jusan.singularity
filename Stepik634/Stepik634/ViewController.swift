@@ -8,26 +8,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-    lazy var game = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
+    lazy var game: Concentration = {
+        let game = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
+        game.delegate = self
+        return game
+    }()
     
     @IBOutlet var flipCountLabel: UILabel!
 
     @IBOutlet var cardButtons: [UIButton]!
     
-    var flipCount = 0 {
-        didSet {
-            flipCountLabel.text = "Количество ходов: \(flipCount)"
-        }
+    @IBAction func restart(_ sender: UIButton) {
+        game.restart()
     }
+    
+    
     var emojiChoices = ["🐶", "🐱", "🐭", "🐼", "🐻", "🦊", "🐸", "🐥", "🐵","🪿","🐴",]
-    var emojiesCache = Dictionary <Int, String>()
+    var emojiesCache = Dictionary <Card, String>()
     
     
     @IBAction func touchCard(_ sender: UIButton) {
         guard let index = cardButtons.firstIndex(of: sender) else { return }
         game.chooseCard(at: index)
         updateViewFromModel()
-        flipCount += 1
+        
     }
     func updateViewFromModel() {
         for index in cardButtons.indices {
@@ -43,16 +47,19 @@ class ViewController: UIViewController {
         }
     }
     func getEmoji(for card: Card) -> String {
-        if let emoji = emojiesCache[card.identifier] {
+        if let emoji = emojiesCache[card] {
             return emoji
         } else {
             guard let randomIndex = emojiChoices.indices.randomElement() else { return "?"}
             let emoji = emojiChoices.remove(at: randomIndex)
-            emojiesCache[card.identifier] = emoji
+            emojiesCache[card] = emoji
             return emoji
         }
     }
-    
-
 }
 
+extension ViewController: ConcentrationDelegate {
+    func didUpdateCount(with count: Int) {
+        flipCountLabel.text = "Кол-во ходов: \(count)"
+    }
+}
