@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductBankCollectionViewCell" customModule="CopyKaspiKZ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="37" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="37" height="45"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hka-O0-XlH">
+                        <rect key="frame" x="0.0" y="0.0" width="37" height="45"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Haj-RH-tfI">
+                                <rect key="frame" x="4" y="4" width="29" height="15"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFC-Gi-3ri">
+                                <rect key="frame" x="4" y="23" width="29" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JFC-Gi-3ri" secondAttribute="trailing" constant="4" id="4ZF-KK-6eW"/>
+                            <constraint firstAttribute="trailing" secondItem="Haj-RH-tfI" secondAttribute="trailing" constant="4" id="Ikq-2t-lhu"/>
+                            <constraint firstAttribute="bottom" secondItem="JFC-Gi-3ri" secondAttribute="bottom" constant="4" id="UKP-QY-z2h"/>
+                            <constraint firstItem="Haj-RH-tfI" firstAttribute="leading" secondItem="hka-O0-XlH" secondAttribute="leading" constant="4" id="ceG-Ae-q3j"/>
+                            <constraint firstItem="Haj-RH-tfI" firstAttribute="top" secondItem="hka-O0-XlH" secondAttribute="top" constant="4" id="iYK-rs-4j9"/>
+                            <constraint firstItem="JFC-Gi-3ri" firstAttribute="leading" secondItem="hka-O0-XlH" secondAttribute="leading" constant="4" id="vWQ-vW-rUK"/>
+                            <constraint firstItem="JFC-Gi-3ri" firstAttribute="top" secondItem="Haj-RH-tfI" secondAttribute="bottom" constant="4" id="xkk-wh-EAh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="hka-O0-XlH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5hV-c1-O8F"/>
+                <constraint firstItem="hka-O0-XlH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Asp-Mv-jIQ"/>
+                <constraint firstAttribute="trailing" secondItem="hka-O0-XlH" secondAttribute="trailing" id="iQq-wF-I9h"/>
+                <constraint firstAttribute="bottom" secondItem="hka-O0-XlH" secondAttribute="bottom" id="jdi-0e-B7p"/>
+            </constraints>
+            <size key="customSize" width="93" height="95"/>
+            <connections>
+                <outlet property="imageBankProduct" destination="Haj-RH-tfI" id="tgf-gE-1GU"/>
+                <outlet property="nameBankProduct" destination="JFC-Gi-3ri" id="waj-Wx-bGz"/>
+            </connections>
+            <point key="canvasLocation" x="74.045801526717554" y="36.267605633802816"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
