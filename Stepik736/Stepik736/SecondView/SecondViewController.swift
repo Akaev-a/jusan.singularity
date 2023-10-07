@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import UIKit
+
+class SecondViewController: UIViewController, UICollectionViewDelegate {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+}
