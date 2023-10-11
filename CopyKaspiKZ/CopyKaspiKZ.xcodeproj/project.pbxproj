@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		12A798CE2ACC2A0E007FC284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A798CD2ACC2A0E007FC284 /* AppDelegate.swift */; };
 		12A798D02ACC2A0E007FC284 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A798CF2ACC2A0E007FC284 /* SceneDelegate.swift */; };
-		12A798D22ACC2A0E007FC284 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A798D12ACC2A0E007FC284 /* ViewController.swift */; };
+		12A798D22ACC2A0E007FC284 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A798D12ACC2A0E007FC284 /* MainViewController.swift */; };
 		12A798D52ACC2A0E007FC284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A798D32ACC2A0E007FC284 /* Main.storyboard */; };
 		12A798D82ACC2A0E007FC284 /* CopyKaspiKZ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12A798D62ACC2A0E007FC284 /* CopyKaspiKZ.xcdatamodeld */; };
 		12A798DA2ACC2A0F007FC284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A798D92ACC2A0F007FC284 /* Assets.xcassets */; };
@@ -19,7 +19,6 @@
 		12A798F02ACC2F95007FC284 /* ProductBankCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A798EE2ACC2F95007FC284 /* ProductBankCollectionViewCell.swift */; };
 		12A798F12ACC2F95007FC284 /* ProductBankCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A798EF2ACC2F95007FC284 /* ProductBankCollectionViewCell.xib */; };
 		12A798F32ACC2FCA007FC284 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A798F22ACC2FCA007FC284 /* LoginViewController.swift */; };
-		12A798F52ACC2FD5007FC284 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A798F42ACC2FD5007FC284 /* LoginViewController.storyboard */; };
 		12A798F72ACC8708007FC284 /* PromotionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A798F62ACC8708007FC284 /* PromotionItem.swift */; };
 		12A798FA2ACD95AB007FC284 /* OfferServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A798F82ACD95AB007FC284 /* OfferServicesCollectionViewCell.swift */; };
 		12A798FB2ACD95AB007FC284 /* OfferServicesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A798F92ACD95AB007FC284 /* OfferServicesCollectionViewCell.xib */; };
@@ -28,13 +27,16 @@
 		12A799012AD08368007FC284 /* OfferOfGoodsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A798FF2AD08368007FC284 /* OfferOfGoodsCollectionViewCell.xib */; };
 		12A799052AD0863E007FC284 /* OfferOfGoodsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A799042AD0863E007FC284 /* OfferOfGoodsItem.swift */; };
 		12A799082AD13346007FC284 /* ProductBankItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A799072AD13346007FC284 /* ProductBankItem.swift */; };
+		12A7990A2AD7034F007FC284 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A799092AD7034F007FC284 /* MainTabBar.swift */; };
+		12A7990C2AD7035C007FC284 /* QRTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A7990B2AD7035C007FC284 /* QRTabBar.swift */; };
+		12A7990E2AD70C2F007FC284 /* MessageTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A7990D2AD70C2F007FC284 /* MessageTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12A798CA2ACC2A0E007FC284 /* CopyKaspiKZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CopyKaspiKZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A798CD2ACC2A0E007FC284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12A798CF2ACC2A0E007FC284 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		12A798D12ACC2A0E007FC284 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12A798D12ACC2A0E007FC284 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		12A798D42ACC2A0E007FC284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12A798D72ACC2A0E007FC284 /* CopyKaspiKZ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CopyKaspiKZ.xcdatamodel; sourceTree = "<group>"; };
 		12A798D92ACC2A0F007FC284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,7 +47,6 @@
 		12A798EE2ACC2F95007FC284 /* ProductBankCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductBankCollectionViewCell.swift; sourceTree = "<group>"; };
 		12A798EF2ACC2F95007FC284 /* ProductBankCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductBankCollectionViewCell.xib; sourceTree = "<group>"; };
 		12A798F22ACC2FCA007FC284 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		12A798F42ACC2FD5007FC284 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		12A798F62ACC8708007FC284 /* PromotionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionItem.swift; sourceTree = "<group>"; };
 		12A798F82ACD95AB007FC284 /* OfferServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferServicesCollectionViewCell.swift; sourceTree = "<group>"; };
 		12A798F92ACD95AB007FC284 /* OfferServicesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfferServicesCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -54,6 +55,9 @@
 		12A798FF2AD08368007FC284 /* OfferOfGoodsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfferOfGoodsCollectionViewCell.xib; sourceTree = "<group>"; };
 		12A799042AD0863E007FC284 /* OfferOfGoodsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferOfGoodsItem.swift; sourceTree = "<group>"; };
 		12A799072AD13346007FC284 /* ProductBankItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductBankItem.swift; sourceTree = "<group>"; };
+		12A799092AD7034F007FC284 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		12A7990B2AD7035C007FC284 /* QRTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRTabBar.swift; sourceTree = "<group>"; };
+		12A7990D2AD70C2F007FC284 /* MessageTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		12A798CC2ACC2A0E007FC284 /* CopyKaspiKZ */ = {
 			isa = PBXGroup;
 			children = (
+				12A798D32ACC2A0E007FC284 /* Main.storyboard */,
 				12A799062AD12B17007FC284 /* TabBar */,
 				12A798E52ACC2E14007FC284 /* Login */,
 				12A798E42ACC2E02007FC284 /* Main */,
@@ -102,9 +107,8 @@
 		12A798E42ACC2E02007FC284 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				12A798D12ACC2A0E007FC284 /* MainViewController.swift */,
 				12A798E62ACC2E62007FC284 /* Promotion */,
-				12A798D12ACC2A0E007FC284 /* ViewController.swift */,
-				12A798D32ACC2A0E007FC284 /* Main.storyboard */,
 				12A798E72ACC2E98007FC284 /* ProductBank */,
 				12A798E82ACC2EAF007FC284 /* OfferServices */,
 				12A798E92ACC2EF4007FC284 /* OfferOfGoods */,
@@ -116,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				12A798F22ACC2FCA007FC284 /* LoginViewController.swift */,
-				12A798F42ACC2FD5007FC284 /* LoginViewController.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -164,6 +167,9 @@
 		12A799062AD12B17007FC284 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				12A799092AD7034F007FC284 /* MainTabBar.swift */,
+				12A7990B2AD7035C007FC284 /* QRTabBar.swift */,
+				12A7990D2AD70C2F007FC284 /* MessageTabBar.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -231,7 +237,6 @@
 				12A798DD2ACC2A0F007FC284 /* LaunchScreen.storyboard in Resources */,
 				12A798DA2ACC2A0F007FC284 /* Assets.xcassets in Resources */,
 				12A798F12ACC2F95007FC284 /* ProductBankCollectionViewCell.xib in Resources */,
-				12A798F52ACC2FD5007FC284 /* LoginViewController.storyboard in Resources */,
 				12A798ED2ACC2F61007FC284 /* PromotionCollectionViewCell.xib in Resources */,
 				12A798D52ACC2A0E007FC284 /* Main.storyboard in Resources */,
 			);
@@ -246,17 +251,20 @@
 			files = (
 				12A798F32ACC2FCA007FC284 /* LoginViewController.swift in Sources */,
 				12A798F02ACC2F95007FC284 /* ProductBankCollectionViewCell.swift in Sources */,
+				12A7990A2AD7034F007FC284 /* MainTabBar.swift in Sources */,
 				12A798D82ACC2A0E007FC284 /* CopyKaspiKZ.xcdatamodeld in Sources */,
 				12A799052AD0863E007FC284 /* OfferOfGoodsItem.swift in Sources */,
-				12A798D22ACC2A0E007FC284 /* ViewController.swift in Sources */,
+				12A798D22ACC2A0E007FC284 /* MainViewController.swift in Sources */,
 				12A798F72ACC8708007FC284 /* PromotionItem.swift in Sources */,
 				12A798FD2ACD97C9007FC284 /* OfferServiceItem.swift in Sources */,
 				12A798CE2ACC2A0E007FC284 /* AppDelegate.swift in Sources */,
+				12A7990C2AD7035C007FC284 /* QRTabBar.swift in Sources */,
 				12A798EC2ACC2F61007FC284 /* PromotionCollectionViewCell.swift in Sources */,
 				12A798D02ACC2A0E007FC284 /* SceneDelegate.swift in Sources */,
 				12A799002AD08368007FC284 /* OfferOfGoodsCollectionViewCell.swift in Sources */,
 				12A799082AD13346007FC284 /* ProductBankItem.swift in Sources */,
 				12A798FA2ACD95AB007FC284 /* OfferServicesCollectionViewCell.swift in Sources */,
+				12A7990E2AD70C2F007FC284 /* MessageTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -386,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -401,8 +409,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6D7248TAX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CopyKaspiKZ/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -410,6 +420,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -417,6 +428,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Akaev.CopyKaspiKZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -428,8 +440,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6D7248TAX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CopyKaspiKZ/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -437,6 +451,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,6 +459,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Akaev.CopyKaspiKZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

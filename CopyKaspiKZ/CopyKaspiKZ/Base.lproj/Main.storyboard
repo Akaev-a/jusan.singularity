@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1J9-4B-f1Z">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -8,10 +8,32 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="hQB-w1-NFJ">
+            <objects>
+                <tabBarController hidesBottomBarWhenPushed="YES" id="1J9-4B-f1Z" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tyu-CH-ivQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.25400114779999999" green="0.25400114779999999" blue="0.25400114779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.38872562570000002" green="0.38872562570000002" blue="0.38872562570000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="CAV-DQ-lcu"/>
+                        <segue destination="EA5-Aa-pjC" kind="relationship" relationship="viewControllers" id="sOX-bm-Btr"/>
+                        <segue destination="qmt-DS-bQw" kind="relationship" relationship="viewControllers" id="vFT-Po-nm3"/>
+                        <segue destination="wiY-rN-jZK" kind="relationship" relationship="viewControllers" id="QGs-mY-90Z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QMc-f2-YPy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1253" y="4"/>
+        </scene>
+        <!--Главная-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CopyKaspiKZ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="CopyKaspiKZ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,11 +71,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="inR-9L-XFr"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="tnF-NJ-GDl">
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="35" id="tnF-NJ-GDl">
                                     <size key="itemSize" width="0.0" height="0.0"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
@@ -137,33 +159,12 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <tabBar contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="5s9-CB-qTw">
-                                <rect key="frame" x="0.0" y="772" width="393" height="46"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="NPa-q7-076"/>
-                                </constraints>
-                                <items>
-                                    <tabBarItem title="Главная" image="main-menu" id="4IQ-qB-QvF"/>
-                                    <tabBarItem title="Kaspi QR" image="qr 1" id="5gW-2i-Y31"/>
-                                    <tabBarItem title="Сообщения" image="message" id="Ji5-sC-nqn"/>
-                                    <tabBarItem title="Сервисы" image="add-service" id="sS4-wR-lBr"/>
-                                </items>
-                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="barTintColor" red="0.38872562570000002" green="0.38872562570000002" blue="0.38872562570000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="selectedImageTintColor" red="0.1647058874" green="0.1607843041" blue="0.1607843041" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <tabBarAppearance key="standardAppearance">
-                                    <color key="backgroundColor" red="0.25400114779999999" green="0.25400114779999999" blue="0.25400114779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="selectionIndicatorTintColor" red="0.38872562570000002" green="0.38872562570000002" blue="0.38872562570000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </tabBarAppearance>
-                            </tabBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.25400114779999999" green="0.25400114779999999" blue="0.25400114779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CAO-OE-Qvx" secondAttribute="trailing" id="3Qk-iq-KDm"/>
                             <constraint firstItem="GTS-Oj-UWs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7Nn-Wm-t8x"/>
-                            <constraint firstItem="5s9-CB-qTw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="81s-uK-3Te"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="udc-Ju-3D1" secondAttribute="trailing" id="AyX-lY-RQ7"/>
                             <constraint firstItem="CAO-OE-Qvx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BSv-MX-2Vn"/>
                             <constraint firstItem="GTS-Oj-UWs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EIr-7t-BEb"/>
@@ -178,12 +179,13 @@
                             <constraint firstItem="udc-Ju-3D1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bT9-2X-8D0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="88g-Aw-pr8" secondAttribute="trailing" id="lgL-dq-ce9"/>
                             <constraint firstItem="0vt-Bf-MBr" firstAttribute="top" secondItem="GTS-Oj-UWs" secondAttribute="bottom" id="n0p-zp-9FR"/>
-                            <constraint firstItem="5s9-CB-qTw" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oCY-73-TF9"/>
                             <constraint firstItem="GTS-Oj-UWs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="s55-fl-Kfp"/>
                             <constraint firstItem="UzO-XC-zfq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vMN-FM-XnQ"/>
-                            <constraint firstItem="5s9-CB-qTw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xxT-Xa-5k3"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Главная" image="main-menu" id="bDA-4X-GNp">
+                        <color key="badgeColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="magnumView" destination="CAO-OE-Qvx" id="AYP-gn-s2r"/>
                         <outlet property="offerOfGoods" destination="88g-Aw-pr8" id="T5I-0O-a81"/>
@@ -194,7 +196,117 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="-390" y="4"/>
+        </scene>
+        <!--Kaspi QR -->
+        <scene sceneID="1lo-Cu-JZU">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="EA5-Aa-pjC" customClass="CameraViewController" customModule="CopyKaspiKZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ojh-KF-8rg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Qr7-Rk-916"/>
+                        <color key="backgroundColor" red="0.25400114779999999" green="0.25400114779999999" blue="0.25400114779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Kaspi QR " image="qr 1" id="AKF-Vo-cc2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqX-u2-WeH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1931" y="756"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Fgs-xd-VJL">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="RqD-Yx-Poc" customClass="LoginViewController" customModule="CopyKaspiKZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s2W-cf-eSD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="253" horizontalCompressionResistancePriority="755" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Мобильный номер" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Qe-PY-JLR">
+                                <rect key="frame" x="0.0" y="79" width="393" height="46"/>
+                                <color key="backgroundColor" red="0.1647058874" green="0.1607843041" blue="0.1607843041" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="pKH-hk-zoK"/>
+                                </constraints>
+                                <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wE3-TG-3qm">
+                                <rect key="frame" x="0.0" y="133" width="393" height="46"/>
+                                <color key="backgroundColor" red="0.1647058874" green="0.1607843041" blue="0.1607843041" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="hdX-ac-ORj"/>
+                                    <constraint firstAttribute="height" constant="46" id="qcW-fy-Vyx"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dC-sp-Tb2">
+                                <rect key="frame" x="16" y="195" width="361" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dNn-Lg-XGo"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Войти">
+                                    <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Ld-Ah-QgM"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0dC-sp-Tb2" firstAttribute="top" secondItem="wE3-TG-3qm" secondAttribute="bottom" constant="16" id="1WA-N3-hqS"/>
+                            <constraint firstItem="wE3-TG-3qm" firstAttribute="leading" secondItem="2Ld-Ah-QgM" secondAttribute="leading" id="53O-Bi-MAQ"/>
+                            <constraint firstItem="0Qe-PY-JLR" firstAttribute="top" secondItem="2Ld-Ah-QgM" secondAttribute="top" constant="20" id="5R6-fb-wtj"/>
+                            <constraint firstItem="2Ld-Ah-QgM" firstAttribute="trailing" secondItem="0dC-sp-Tb2" secondAttribute="trailing" constant="16" id="64u-BY-0Eu"/>
+                            <constraint firstItem="wE3-TG-3qm" firstAttribute="trailing" secondItem="2Ld-Ah-QgM" secondAttribute="trailing" id="EMf-yp-j4G"/>
+                            <constraint firstItem="0dC-sp-Tb2" firstAttribute="leading" secondItem="2Ld-Ah-QgM" secondAttribute="leading" constant="16" id="dd2-ac-e6Q"/>
+                            <constraint firstItem="wE3-TG-3qm" firstAttribute="top" secondItem="0Qe-PY-JLR" secondAttribute="bottom" constant="8" id="ea6-AS-vZn"/>
+                            <constraint firstItem="0Qe-PY-JLR" firstAttribute="leading" secondItem="2Ld-Ah-QgM" secondAttribute="leading" id="k9f-By-UWo"/>
+                            <constraint firstItem="2Ld-Ah-QgM" firstAttribute="trailing" secondItem="0Qe-PY-JLR" secondAttribute="trailing" id="r26-At-4nj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vqf-Wv-h5c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2037" y="4"/>
+        </scene>
+        <!--Сообщения-->
+        <scene sceneID="ZHZ-Fj-tft">
+            <objects>
+                <viewController id="qmt-DS-bQw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0SC-UF-7Vk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FDn-FX-1Ys"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Сообщения" image="message" id="VM2-ld-eRu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vLn-BY-vDT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1045" y="756"/>
+        </scene>
+        <!--Сервисы-->
+        <scene sceneID="Aj5-Ck-Mug">
+            <objects>
+                <viewController id="wiY-rN-jZK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dAx-5v-joC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="igS-Ub-LPF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Сервисы" image="add-service" id="5ag-EQ-TwY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0mS-ED-qe7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2106" y="4"/>
         </scene>
     </scenes>
     <resources>
@@ -204,8 +316,8 @@
         <image name="main-menu" width="28" height="28"/>
         <image name="message" width="28" height="28"/>
         <image name="qr 1" width="28" height="28"/>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

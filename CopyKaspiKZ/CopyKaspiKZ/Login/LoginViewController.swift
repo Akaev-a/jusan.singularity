@@ -7,3 +7,10 @@
 
 import Foundation
 import UIKit
+
+class LoginViewController: UIViewController, UICollectionViewDelegateFlowLayout {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+}

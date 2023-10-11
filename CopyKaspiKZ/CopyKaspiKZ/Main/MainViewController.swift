@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegateFlowLayout {
+class MainViewController: UIViewController, UICollectionViewDelegateFlowLayout {
 
     // MARK: - IBOutlet
     
@@ -63,19 +63,19 @@ private let goods: [GoodsItem] = [
 ]
 
 private let product: [ProductBankItem] = [
-    ProductBankItem(imageProductBank: UIImage(named: "Gov")!, nameProductBank: "Gosuslugi"),
-    ProductBankItem(imageProductBank: UIImage(named: "Gov")!, nameProductBank: "Gosuslugi"),
-    ProductBankItem(imageProductBank: UIImage(named: "Gov")!, nameProductBank: "Gosuslugi"),
-    ProductBankItem(imageProductBank: UIImage(named: "Gov")!, nameProductBank: "Gosuslugi"),
-    ProductBankItem(imageProductBank: UIImage(named: "Gov")!, nameProductBank: "Gosuslugi"),
-    ProductBankItem(imageProductBank: UIImage(named: "Gov")!, nameProductBank: "Gosuslugi"),
-    ProductBankItem(imageProductBank: UIImage(named: "Gov")!, nameProductBank: "Gosuslugi"),
-    ProductBankItem(imageProductBank: UIImage(named: "Gov")!, nameProductBank: "Gosuslugi")
+    ProductBankItem(imageProductBank: UIImage(named: "QR")!, nameProductBank: "Kaspi QR"),
+    ProductBankItem(imageProductBank: UIImage(named: "Bank")!, nameProductBank: "Мой банк"),
+    ProductBankItem(imageProductBank: UIImage(named: "Payments")!, nameProductBank: "Платежи"),
+    ProductBankItem(imageProductBank: UIImage(named: "Transfers")!, nameProductBank: "Переводы"),
+    ProductBankItem(imageProductBank: UIImage(named: "Shop")!, nameProductBank: "Магазин"),
+    ProductBankItem(imageProductBank: UIImage(named: "Travel")!, nameProductBank: "Travel"),
+    ProductBankItem(imageProductBank: UIImage(named: "Gov")!, nameProductBank: "Госуслуги"),
+    ProductBankItem(imageProductBank: UIImage(named: "Ad")!, nameProductBank: "Объявления")
 
 ]
 
 // MARK: - extension
-extension ViewController: UICollectionViewDataSource {
+extension MainViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == promotionCollectionView {
             return promo.count
