@@ -19,6 +19,7 @@
 		1207DD762AE6CCCD009203B4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1207DD752AE6CCCD009203B4 /* DetailViewController.swift */; };
 		1207DD782AE9720E009203B4 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1207DD772AE9720E009203B4 /* AddContactViewController.swift */; };
 		1207DD7A2AE97579009203B4 /* DataBaseContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1207DD792AE97579009203B4 /* DataBaseContact.swift */; };
+		1207DD7C2AEAA317009203B4 /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1207DD7B2AEAA317009203B4 /* EditContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		1207DD752AE6CCCD009203B4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1207DD772AE9720E009203B4 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		1207DD792AE97579009203B4 /* DataBaseContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseContact.swift; sourceTree = "<group>"; };
+		1207DD7B2AEAA317009203B4 /* EditContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				1207DD5A2AE6BF0A009203B4 /* SceneDelegate.swift */,
 				1207DD5C2AE6BF0A009203B4 /* ViewController.swift */,
 				1207DD5E2AE6BF0A009203B4 /* Main.storyboard */,
+				1207DD7B2AEAA317009203B4 /* EditContactViewController.swift */,
 				1207DD772AE9720E009203B4 /* AddContactViewController.swift */,
 				1207DD752AE6CCCD009203B4 /* DetailViewController.swift */,
 				1207DD6F2AE6C379009203B4 /* ModelContact.swift */,
@@ -161,6 +164,7 @@
 				1207DD702AE6C379009203B4 /* ModelContact.swift in Sources */,
 				1207DD5D2AE6BF0A009203B4 /* ViewController.swift in Sources */,
 				1207DD592AE6BF0A009203B4 /* AppDelegate.swift in Sources */,
+				1207DD7C2AEAA317009203B4 /* EditContactViewController.swift in Sources */,
 				1207DD782AE9720E009203B4 /* AddContactViewController.swift in Sources */,
 				1207DD5B2AE6BF0A009203B4 /* SceneDelegate.swift in Sources */,
 				1207DD7A2AE97579009203B4 /* DataBaseContact.swift in Sources */,

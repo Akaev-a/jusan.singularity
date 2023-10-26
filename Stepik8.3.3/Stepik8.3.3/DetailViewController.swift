@@ -62,28 +62,48 @@ class DetailViewController: UIViewController {
         view.addSubview(imageDetailView)
         view.addSubview(nameDetailView)
         view.addSubview(numberDetailView)
-        if let image = imageDetail {
-                imageDetailView.image = image
-            }
-
-            if let name = nameDetail {
-                nameDetailView.text = name
-            }
-
-            if let number = numberDetail {
-                numberDetailView.text = number
-            }
         view.addSubview(callButton)
         view.addSubview(deleteButton)
         
+        if let image = imageDetail {
+            imageDetailView.image = image
+        }
 
-    }
+        if let name = nameDetail {
+            nameDetailView.text = name
+        }
+
+        if let number = numberDetail {
+            numberDetailView.text = number
+        }
+        
+        
+        let editButton = UIBarButtonItem(title: "Изм.", style: .plain, target: self, action: #selector(editButtonTapped))
+                  navigationItem.rightBarButtonItem = editButton
+        
+       }
+    @objc func editButtonTapped() {
+        if let editContactViewController = storyboard?.instantiateViewController(withIdentifier: "EditContact") as? EditContactViewController {
+                navigationController?.pushViewController(editContactViewController, animated: true)
+            editContactViewController.editNumber1 = numberDetail!
+            editContactViewController.editName1 = nameDetail!
+            }
+
+        }
+    
+    
     @objc func deleteButtonTapped() {
         if let name = nameDetail {
             if let index = ContactDB.arrayContact.firstIndex(where: { $0.name == name }) {
                 ContactDB.arrayContact.remove(at: index)
-                navigationController?.popViewController(animated: true)            }
+                navigationController?.popViewController(animated: true)
+                
+            }
         }
     }
-
+    
+    
 }
+
+
+
