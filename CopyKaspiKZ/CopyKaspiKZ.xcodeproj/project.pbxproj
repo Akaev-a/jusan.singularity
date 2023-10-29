@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		126B88792AED8A5200431400 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B88782AED8A5200431400 /* MessageViewController.swift */; };
+		126B887D2AED9F5000431400 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B887C2AED9F5000431400 /* MessageTableViewCell.swift */; };
+		126B887F2AEDA01C00431400 /* ModelMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B887E2AEDA01C00431400 /* ModelMessage.swift */; };
 		12A798CE2ACC2A0E007FC284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A798CD2ACC2A0E007FC284 /* AppDelegate.swift */; };
 		12A798D02ACC2A0E007FC284 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A798CF2ACC2A0E007FC284 /* SceneDelegate.swift */; };
 		12A798D22ACC2A0E007FC284 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A798D12ACC2A0E007FC284 /* MainViewController.swift */; };
@@ -33,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		126B88782AED8A5200431400 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		126B887C2AED9F5000431400 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		126B887E2AEDA01C00431400 /* ModelMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMessage.swift; sourceTree = "<group>"; };
 		12A798CA2ACC2A0E007FC284 /* CopyKaspiKZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CopyKaspiKZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A798CD2ACC2A0E007FC284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12A798CF2ACC2A0E007FC284 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +77,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		126B88772AED89A100431400 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				126B88782AED8A5200431400 /* MessageViewController.swift */,
+				126B887C2AED9F5000431400 /* MessageTableViewCell.swift */,
+				126B887E2AEDA01C00431400 /* ModelMessage.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
 		12A798C12ACC2A0E007FC284 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +110,7 @@
 				12A799062AD12B17007FC284 /* TabBar */,
 				12A798E52ACC2E14007FC284 /* Login */,
 				12A798E42ACC2E02007FC284 /* Main */,
+				126B88772AED89A100431400 /* Message */,
 				12A798CD2ACC2A0E007FC284 /* AppDelegate.swift */,
 				12A798CF2ACC2A0E007FC284 /* SceneDelegate.swift */,
 				12A798D92ACC2A0F007FC284 /* Assets.xcassets */,
@@ -260,8 +277,11 @@
 				12A798CE2ACC2A0E007FC284 /* AppDelegate.swift in Sources */,
 				12A7990C2AD7035C007FC284 /* QRTabBar.swift in Sources */,
 				12A798EC2ACC2F61007FC284 /* PromotionCollectionViewCell.swift in Sources */,
+				126B887D2AED9F5000431400 /* MessageTableViewCell.swift in Sources */,
+				126B887F2AEDA01C00431400 /* ModelMessage.swift in Sources */,
 				12A798D02ACC2A0E007FC284 /* SceneDelegate.swift in Sources */,
 				12A799002AD08368007FC284 /* OfferOfGoodsCollectionViewCell.swift in Sources */,
+				126B88792AED8A5200431400 /* MessageViewController.swift in Sources */,
 				12A799082AD13346007FC284 /* ProductBankItem.swift in Sources */,
 				12A798FA2ACD95AB007FC284 /* OfferServicesCollectionViewCell.swift in Sources */,
 				12A7990E2AD70C2F007FC284 /* MessageTabBar.swift in Sources */,
