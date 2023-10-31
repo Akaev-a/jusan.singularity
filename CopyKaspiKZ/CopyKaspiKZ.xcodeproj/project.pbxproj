@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		122075F72AEE8F980003215B /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122075F62AEE8F980003215B /* ServiceViewController.swift */; };
 		126B88792AED8A5200431400 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B88782AED8A5200431400 /* MessageViewController.swift */; };
 		126B887D2AED9F5000431400 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B887C2AED9F5000431400 /* MessageTableViewCell.swift */; };
 		126B887F2AEDA01C00431400 /* ModelMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B887E2AEDA01C00431400 /* ModelMessage.swift */; };
@@ -33,9 +34,12 @@
 		12A7990A2AD7034F007FC284 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A799092AD7034F007FC284 /* MainTabBar.swift */; };
 		12A7990C2AD7035C007FC284 /* QRTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A7990B2AD7035C007FC284 /* QRTabBar.swift */; };
 		12A7990E2AD70C2F007FC284 /* MessageTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A7990D2AD70C2F007FC284 /* MessageTabBar.swift */; };
+		12B970282AF173B800CDE1F4 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B970272AF173B800CDE1F4 /* ServiceTableViewCell.swift */; };
+		12B9702A2AF1758300CDE1F4 /* ModelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B970292AF1758300CDE1F4 /* ModelService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		122075F62AEE8F980003215B /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
 		126B88782AED8A5200431400 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		126B887C2AED9F5000431400 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		126B887E2AEDA01C00431400 /* ModelMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMessage.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 		12A799092AD7034F007FC284 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		12A7990B2AD7035C007FC284 /* QRTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRTabBar.swift; sourceTree = "<group>"; };
 		12A7990D2AD70C2F007FC284 /* MessageTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTabBar.swift; sourceTree = "<group>"; };
+		12B970272AF173B800CDE1F4 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
+		12B970292AF1758300CDE1F4 /* ModelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122075F52AEE8F6D0003215B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				12B9702B2AF179D100CDE1F4 /* ServiceCustomCellXib */,
+				12B970272AF173B800CDE1F4 /* ServiceTableViewCell.swift */,
+				122075F62AEE8F980003215B /* ServiceViewController.swift */,
+				12B970292AF1758300CDE1F4 /* ModelService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		126B88772AED89A100431400 /* Message */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +128,7 @@
 				12A798E52ACC2E14007FC284 /* Login */,
 				12A798E42ACC2E02007FC284 /* Main */,
 				126B88772AED89A100431400 /* Message */,
+				122075F52AEE8F6D0003215B /* Service */,
 				12A798CD2ACC2A0E007FC284 /* AppDelegate.swift */,
 				12A798CF2ACC2A0E007FC284 /* SceneDelegate.swift */,
 				12A798D92ACC2A0F007FC284 /* Assets.xcassets */,
@@ -189,6 +207,13 @@
 				12A7990D2AD70C2F007FC284 /* MessageTabBar.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		12B9702B2AF179D100CDE1F4 /* ServiceCustomCellXib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServiceCustomCellXib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,11 +304,14 @@
 				12A798EC2ACC2F61007FC284 /* PromotionCollectionViewCell.swift in Sources */,
 				126B887D2AED9F5000431400 /* MessageTableViewCell.swift in Sources */,
 				126B887F2AEDA01C00431400 /* ModelMessage.swift in Sources */,
+				12B970282AF173B800CDE1F4 /* ServiceTableViewCell.swift in Sources */,
 				12A798D02ACC2A0E007FC284 /* SceneDelegate.swift in Sources */,
 				12A799002AD08368007FC284 /* OfferOfGoodsCollectionViewCell.swift in Sources */,
 				126B88792AED8A5200431400 /* MessageViewController.swift in Sources */,
+				12B9702A2AF1758300CDE1F4 /* ModelService.swift in Sources */,
 				12A799082AD13346007FC284 /* ProductBankItem.swift in Sources */,
 				12A798FA2ACD95AB007FC284 /* OfferServicesCollectionViewCell.swift in Sources */,
+				122075F72AEE8F980003215B /* ServiceViewController.swift in Sources */,
 				12A7990E2AD70C2F007FC284 /* MessageTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

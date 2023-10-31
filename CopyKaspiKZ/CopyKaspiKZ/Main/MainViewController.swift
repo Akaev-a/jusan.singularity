@@ -32,6 +32,7 @@ class MainViewController: UIViewController, UICollectionViewDelegateFlowLayout {
         let offerGoodsNib = UINib(nibName: "OfferOfGoodsCollectionViewCell", bundle: .main)
         offerOfGoods.register(offerGoodsNib, forCellWithReuseIdentifier: "OfferOfGoodsCollectionViewCell")
         
+        
         productBank.dataSource = self
         productBank.delegate = self
         let productBankNib = UINib(nibName: "ProductBankCollectionViewCell", bundle: .main)
@@ -124,7 +125,7 @@ extension MainViewController: UICollectionViewDataSource {
             let numberOfButtons: CGFloat = CGFloat (4)
             let collectionViewWidth = collectionView.frame.size.width
             let buttonWidth = collectionViewWidth / numberOfButtons
-            let buttonHeight: CGFloat = productBank.frame.size.height / 2 - 6
+            let buttonHeight: CGFloat = productBank.frame.size.height / 2
             print("индекс кнопки: \(indexPath), ширина buttonWidth: \(buttonWidth), высота buttonHeight \(buttonHeight)")
             return CGSize(width: buttonWidth, height: buttonHeight)
             }

@@ -9,6 +9,8 @@ import UIKit
 
 class OfferServicesCollectionViewCell: UICollectionViewCell {
 
+    // MARK: - IBOutlet
+    
     @IBOutlet weak var imageProduct: UIImageView!
     @IBOutlet weak var nameProduct: UILabel!
     @IBOutlet weak var discriptionsProduct: UILabel!

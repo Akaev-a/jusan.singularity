@@ -8,7 +8,8 @@
 import UIKit
 
 class PromotionCollectionViewCell: UICollectionViewCell {
-
+    
+    // MARK: - IBOutlet
     @IBOutlet weak var imagePromo: UIImageView!
     @IBOutlet weak var dateSale: UILabel!
     override func awakeFromNib() {

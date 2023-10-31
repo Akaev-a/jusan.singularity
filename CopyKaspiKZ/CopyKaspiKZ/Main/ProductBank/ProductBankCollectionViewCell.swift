@@ -9,12 +9,14 @@ import UIKit
 
 class ProductBankCollectionViewCell: UICollectionViewCell {
 
+    // MARK: - IBOutlet
     @IBOutlet weak var imageBankProduct: UIImageView!
     @IBOutlet weak var nameBankProduct: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
+    
+    
     func configure (with model: ProductBankItem) {
         imageBankProduct.image = model.imageProductBank
         

@@ -9,14 +9,16 @@ import UIKit
 
 class MessageTableViewCell: UITableViewCell {
 
+    // MARK: - IBOutlet
     @IBOutlet weak var imageMessage: UIImageView!
     @IBOutlet weak var nameProductMessage: UILabel!
     @IBOutlet weak var actionDiscriptionsMessage: UILabel!
     @IBOutlet weak var discriptionsMessage: UILabel!
     @IBOutlet weak var dateLastMessage: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
     }
 

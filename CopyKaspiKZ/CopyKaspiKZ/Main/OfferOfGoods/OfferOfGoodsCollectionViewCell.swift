@@ -9,6 +9,8 @@ import UIKit
 
 class OfferOfGoodsCollectionViewCell: UICollectionViewCell {
 
+    // MARK: - IBOutlet
+    
     @IBOutlet weak var imageGoods: UIImageView!
     @IBOutlet weak var labelGoods: UILabel!
     override func awakeFromNib() {
