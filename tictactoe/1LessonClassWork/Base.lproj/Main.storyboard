@@ -255,7 +255,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Player with person"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="m98-ed-f9H"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="playWithPlayer" id="m98-ed-f9H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRr-wa-CvZ">
@@ -280,7 +280,7 @@
         <!--Navigation Controller-->
         <scene sceneID="yyv-JZ-a1E">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NkB-jy-2kS" sceneMemberID="viewController">
+                <navigationController id="NkB-jy-2kS" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="downloads" id="apI-5h-jzf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xT9-9f-XLe">
@@ -295,6 +295,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9p-is-243" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-858.39999999999998" y="3.6945812807881775"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ni8-f0-jXt">
+            <objects>
+                <viewController id="Jzc-Ck-eti" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kra-DY-nUp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8Ww-eD-rMl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Msz-4r-PYS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9B-0Z-oSx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1743" y="823"/>
         </scene>
         <!--Rating View Controller-->
         <scene sceneID="9q8-dX-Tr4">

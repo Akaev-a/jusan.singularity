@@ -7,6 +7,6 @@
 
 import Foundation
 struct XO {
-    var label:String?
+    var writeXO:String?
     var isFaceApp = false
 }

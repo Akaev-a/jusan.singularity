@@ -96,6 +96,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12311E8F2AF62BF3004FEE01 /* Rating */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F92062A7157B70032BD36 /* ratingCell1.swift */,
+				4A0F91FC2A7152BD0032BD36 /* RatingTableViewCell.swift */,
+				4A0F92042A7156600032BD36 /* Rating.swift */,
+				4A0F92082A7158FE0032BD36 /* RatingViewController.swift */,
+			);
+			path = Rating;
+			sourceTree = "<group>";
+		};
 		4AC5B4922A55A24700D08579 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +130,7 @@
 		4AC5B49D2A55A24700D08579 /* 1LessonClassWork */ = {
 			isa = PBXGroup;
 			children = (
+				12311E8F2AF62BF3004FEE01 /* Rating */,
 				4AC5B49E2A55A24700D08579 /* AppDelegate.swift */,
 				4AC5B4A02A55A24700D08579 /* SceneDelegate.swift */,
 				4AC5B4A22A55A24700D08579 /* ViewController.swift */,
@@ -129,10 +141,6 @@
 				4A9580AF2A5EE95800542B87 /* Model.swift */,
 				4A9580B32A5EEA9600542B87 /* Controller.swift */,
 				4A263F0E2A681C29008CF397 /* StartViewController.swift */,
-				4A0F91FC2A7152BD0032BD36 /* RatingTableViewCell.swift */,
-				4A0F92042A7156600032BD36 /* Rating.swift */,
-				4A0F92062A7157B70032BD36 /* ratingCell1.swift */,
-				4A0F92082A7158FE0032BD36 /* RatingViewController.swift */,
 				12F5DB512A7E826500453EE5 /* chouseViewController.swift */,
 				12F5DB532A7FED3C00453EE5 /* WinnerViewController.swift */,
 				12F5DB552A7FF88700453EE5 /* DataBase.swift */,

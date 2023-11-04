@@ -17,7 +17,7 @@ class chouseViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueWithAI" {
             let destination = segue.destination as! ViewController
-            destination.game.isPlayAI = true
+            destination.game.playWithAI = true
         }
     }
 

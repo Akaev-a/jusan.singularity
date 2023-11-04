@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     @IBAction func ButtonClick(_ sender: UIButton) {
         let index = arrayButton.firstIndex(of: sender)!
-        game.writeXO(at: index)
+        game.choiseXO(at: index)
         updateView()
     }
     @IBAction func restartButton(_ sender: UIButton) {
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
             let button = arrayButton[i]
             let card = game.XOs[i]
             if card.isFaceApp{
-                button.setTitle(card.label, for: .normal)
+                button.setTitle(card.writeXO, for: .normal)
                 button.isEnabled = false
             }
             else {
