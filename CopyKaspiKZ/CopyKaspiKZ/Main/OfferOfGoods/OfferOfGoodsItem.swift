@@ -10,4 +10,5 @@ import UIKit
 struct GoodsItem {
     let imageGoodsItem: UIImage
     let labelGoodsItem: String
+    let segueIdentifier: String
 }

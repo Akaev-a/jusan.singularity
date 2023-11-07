@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		122075F72AEE8F980003215B /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122075F62AEE8F980003215B /* ServiceViewController.swift */; };
+		1250B2D62AF6D76000F0288B /* MyBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250B2D52AF6D76000F0288B /* MyBankViewController.swift */; };
+		1250B2D82AF6E04400F0288B /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250B2D72AF6E04400F0288B /* PaymentsViewController.swift */; };
+		1250B2DA2AF6E23400F0288B /* TransfersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250B2D92AF6E23400F0288B /* TransfersViewController.swift */; };
+		1250B2DC2AF6E38A00F0288B /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250B2DB2AF6E38A00F0288B /* ShopViewController.swift */; };
+		1250B2E42AF7D6DF00F0288B /* TravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250B2E32AF7D6DF00F0288B /* TravelViewController.swift */; };
+		1250B2E62AF7D6EA00F0288B /* GovViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250B2E52AF7D6EA00F0288B /* GovViewController.swift */; };
+		1250B2E82AF7D6FA00F0288B /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250B2E72AF7D6FA00F0288B /* AdViewController.swift */; };
+		1250B2ED2AF7D78E00F0288B /* KaspiGidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250B2EC2AF7D78E00F0288B /* KaspiGidViewController.swift */; };
+		1250B2EF2AF7D7A000F0288B /* KaspiMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250B2EE2AF7D7A000F0288B /* KaspiMapsViewController.swift */; };
+		1250B2F12AF7D7AD00F0288B /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250B2F02AF7D7AD00F0288B /* QRViewController.swift */; };
+		1250B3112AFA9CCD00F0288B /* MainCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250B3102AFA9CCD00F0288B /* MainCollectionViewDelegate.swift */; };
+		1250B3132AFA9F4300F0288B /* ArrayCollectionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250B3122AFA9F4300F0288B /* ArrayCollectionMainView.swift */; };
+		1250B3152AFAA0AF00F0288B /* ServiceArrayCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250B3142AFAA0AF00F0288B /* ServiceArrayCollection.swift */; };
+		1250B31A2AFABD4700F0288B /* MyBankViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1250B3182AFABD4700F0288B /* MyBankViewController.storyboard */; };
+		1250B31D2AFABDB600F0288B /* TransfersViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1250B31B2AFABDB600F0288B /* TransfersViewController.storyboard */; };
 		126B88792AED8A5200431400 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B88782AED8A5200431400 /* MessageViewController.swift */; };
 		126B887D2AED9F5000431400 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B887C2AED9F5000431400 /* MessageTableViewCell.swift */; };
 		126B887F2AEDA01C00431400 /* ModelMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B887E2AEDA01C00431400 /* ModelMessage.swift */; };
@@ -40,6 +55,21 @@
 
 /* Begin PBXFileReference section */
 		122075F62AEE8F980003215B /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
+		1250B2D52AF6D76000F0288B /* MyBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBankViewController.swift; sourceTree = "<group>"; };
+		1250B2D72AF6E04400F0288B /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
+		1250B2D92AF6E23400F0288B /* TransfersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersViewController.swift; sourceTree = "<group>"; };
+		1250B2DB2AF6E38A00F0288B /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		1250B2E32AF7D6DF00F0288B /* TravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelViewController.swift; sourceTree = "<group>"; };
+		1250B2E52AF7D6EA00F0288B /* GovViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovViewController.swift; sourceTree = "<group>"; };
+		1250B2E72AF7D6FA00F0288B /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		1250B2EC2AF7D78E00F0288B /* KaspiGidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaspiGidViewController.swift; sourceTree = "<group>"; };
+		1250B2EE2AF7D7A000F0288B /* KaspiMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaspiMapsViewController.swift; sourceTree = "<group>"; };
+		1250B2F02AF7D7AD00F0288B /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		1250B3102AFA9CCD00F0288B /* MainCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		1250B3122AFA9F4300F0288B /* ArrayCollectionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayCollectionMainView.swift; sourceTree = "<group>"; };
+		1250B3142AFAA0AF00F0288B /* ServiceArrayCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceArrayCollection.swift; sourceTree = "<group>"; };
+		1250B3192AFABD4700F0288B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CopyKaspiKZ/Base.lproj/MyBankViewController.storyboard; sourceTree = "<group>"; };
+		1250B31C2AFABDB600F0288B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CopyKaspiKZ/Base.lproj/TransfersViewController.storyboard; sourceTree = "<group>"; };
 		126B88782AED8A5200431400 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		126B887C2AED9F5000431400 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		126B887E2AEDA01C00431400 /* ModelMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMessage.swift; sourceTree = "<group>"; };
@@ -87,11 +117,94 @@
 			isa = PBXGroup;
 			children = (
 				12B9702B2AF179D100CDE1F4 /* ServiceCustomCellXib */,
+				1250B3142AFAA0AF00F0288B /* ServiceArrayCollection.swift */,
 				12B970272AF173B800CDE1F4 /* ServiceTableViewCell.swift */,
 				122075F62AEE8F980003215B /* ServiceViewController.swift */,
 				12B970292AF1758300CDE1F4 /* ModelService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		1250B2D42AF6D73C00F0288B /* My Bank */ = {
+			isa = PBXGroup;
+			children = (
+				1250B2D52AF6D76000F0288B /* MyBankViewController.swift */,
+				1250B3182AFABD4700F0288B /* MyBankViewController.storyboard */,
+			);
+			path = "My Bank";
+			sourceTree = "<group>";
+		};
+		1250B2DD2AF7D62E00F0288B /* Payments */ = {
+			isa = PBXGroup;
+			children = (
+				1250B2D72AF6E04400F0288B /* PaymentsViewController.swift */,
+			);
+			path = Payments;
+			sourceTree = "<group>";
+		};
+		1250B2DE2AF7D64800F0288B /* Transfers */ = {
+			isa = PBXGroup;
+			children = (
+				1250B31B2AFABDB600F0288B /* TransfersViewController.storyboard */,
+				1250B2D92AF6E23400F0288B /* TransfersViewController.swift */,
+			);
+			path = Transfers;
+			sourceTree = "<group>";
+		};
+		1250B2DF2AF7D65700F0288B /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				1250B2DB2AF6E38A00F0288B /* ShopViewController.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		1250B2E02AF7D66B00F0288B /* Travel */ = {
+			isa = PBXGroup;
+			children = (
+				1250B2E32AF7D6DF00F0288B /* TravelViewController.swift */,
+			);
+			path = Travel;
+			sourceTree = "<group>";
+		};
+		1250B2E12AF7D67A00F0288B /* Goverment */ = {
+			isa = PBXGroup;
+			children = (
+				1250B2E52AF7D6EA00F0288B /* GovViewController.swift */,
+			);
+			path = Goverment;
+			sourceTree = "<group>";
+		};
+		1250B2E22AF7D69800F0288B /* Ad */ = {
+			isa = PBXGroup;
+			children = (
+				1250B2E72AF7D6FA00F0288B /* AdViewController.swift */,
+			);
+			path = Ad;
+			sourceTree = "<group>";
+		};
+		1250B2E92AF7D72E00F0288B /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				1250B2F02AF7D7AD00F0288B /* QRViewController.swift */,
+			);
+			path = QR;
+			sourceTree = "<group>";
+		};
+		1250B2EA2AF7D73900F0288B /* KaspiGid */ = {
+			isa = PBXGroup;
+			children = (
+				1250B2EC2AF7D78E00F0288B /* KaspiGidViewController.swift */,
+			);
+			path = KaspiGid;
+			sourceTree = "<group>";
+		};
+		1250B2EB2AF7D76200F0288B /* KaspiMaps */ = {
+			isa = PBXGroup;
+			children = (
+				1250B2EE2AF7D7A000F0288B /* KaspiMapsViewController.swift */,
+			);
+			path = KaspiMaps;
 			sourceTree = "<group>";
 		};
 		126B88772AED89A100431400 /* Message */ = {
@@ -124,17 +237,27 @@
 			isa = PBXGroup;
 			children = (
 				12A798D32ACC2A0E007FC284 /* Main.storyboard */,
-				12A799062AD12B17007FC284 /* TabBar */,
+				1250B2E22AF7D69800F0288B /* Ad */,
+				1250B2E12AF7D67A00F0288B /* Goverment */,
+				1250B2EA2AF7D73900F0288B /* KaspiGid */,
+				1250B2EB2AF7D76200F0288B /* KaspiMaps */,
 				12A798E52ACC2E14007FC284 /* Login */,
 				12A798E42ACC2E02007FC284 /* Main */,
 				126B88772AED89A100431400 /* Message */,
-				122075F52AEE8F6D0003215B /* Service */,
-				12A798CD2ACC2A0E007FC284 /* AppDelegate.swift */,
+				1250B2D42AF6D73C00F0288B /* My Bank */,
+				1250B2DD2AF7D62E00F0288B /* Payments */,
+				1250B2E92AF7D72E00F0288B /* QR */,
 				12A798CF2ACC2A0E007FC284 /* SceneDelegate.swift */,
+				122075F52AEE8F6D0003215B /* Service */,
+				1250B2DF2AF7D65700F0288B /* Shop */,
+				12A799062AD12B17007FC284 /* TabBar */,
+				1250B2DE2AF7D64800F0288B /* Transfers */,
+				1250B2E02AF7D66B00F0288B /* Travel */,
+				12A798D62ACC2A0E007FC284 /* CopyKaspiKZ.xcdatamodeld */,
+				12A798CD2ACC2A0E007FC284 /* AppDelegate.swift */,
+				12A798DE2ACC2A0F007FC284 /* Info.plist */,
 				12A798D92ACC2A0F007FC284 /* Assets.xcassets */,
 				12A798DB2ACC2A0F007FC284 /* LaunchScreen.storyboard */,
-				12A798DE2ACC2A0F007FC284 /* Info.plist */,
-				12A798D62ACC2A0E007FC284 /* CopyKaspiKZ.xcdatamodeld */,
 			);
 			path = CopyKaspiKZ;
 			sourceTree = "<group>";
@@ -147,6 +270,8 @@
 				12A798E72ACC2E98007FC284 /* ProductBank */,
 				12A798E82ACC2EAF007FC284 /* OfferServices */,
 				12A798E92ACC2EF4007FC284 /* OfferOfGoods */,
+				1250B3102AFA9CCD00F0288B /* MainCollectionViewDelegate.swift */,
+				1250B3122AFA9F4300F0288B /* ArrayCollectionMainView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -278,7 +403,9 @@
 				12A799012AD08368007FC284 /* OfferOfGoodsCollectionViewCell.xib in Resources */,
 				12A798DD2ACC2A0F007FC284 /* LaunchScreen.storyboard in Resources */,
 				12A798DA2ACC2A0F007FC284 /* Assets.xcassets in Resources */,
+				1250B31A2AFABD4700F0288B /* MyBankViewController.storyboard in Resources */,
 				12A798F12ACC2F95007FC284 /* ProductBankCollectionViewCell.xib in Resources */,
+				1250B31D2AFABDB600F0288B /* TransfersViewController.storyboard in Resources */,
 				12A798ED2ACC2F61007FC284 /* PromotionCollectionViewCell.xib in Resources */,
 				12A798D52ACC2A0E007FC284 /* Main.storyboard in Resources */,
 			);
@@ -291,34 +418,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1250B2E42AF7D6DF00F0288B /* TravelViewController.swift in Sources */,
 				12A798F32ACC2FCA007FC284 /* LoginViewController.swift in Sources */,
 				12A798F02ACC2F95007FC284 /* ProductBankCollectionViewCell.swift in Sources */,
 				12A7990A2AD7034F007FC284 /* MainTabBar.swift in Sources */,
 				12A798D82ACC2A0E007FC284 /* CopyKaspiKZ.xcdatamodeld in Sources */,
+				1250B3152AFAA0AF00F0288B /* ServiceArrayCollection.swift in Sources */,
+				1250B2DC2AF6E38A00F0288B /* ShopViewController.swift in Sources */,
 				12A799052AD0863E007FC284 /* OfferOfGoodsItem.swift in Sources */,
 				12A798D22ACC2A0E007FC284 /* MainViewController.swift in Sources */,
 				12A798F72ACC8708007FC284 /* PromotionItem.swift in Sources */,
+				1250B2E62AF7D6EA00F0288B /* GovViewController.swift in Sources */,
 				12A798FD2ACD97C9007FC284 /* OfferServiceItem.swift in Sources */,
 				12A798CE2ACC2A0E007FC284 /* AppDelegate.swift in Sources */,
 				12A7990C2AD7035C007FC284 /* QRTabBar.swift in Sources */,
+				1250B2EF2AF7D7A000F0288B /* KaspiMapsViewController.swift in Sources */,
 				12A798EC2ACC2F61007FC284 /* PromotionCollectionViewCell.swift in Sources */,
 				126B887D2AED9F5000431400 /* MessageTableViewCell.swift in Sources */,
 				126B887F2AEDA01C00431400 /* ModelMessage.swift in Sources */,
+				1250B2ED2AF7D78E00F0288B /* KaspiGidViewController.swift in Sources */,
 				12B970282AF173B800CDE1F4 /* ServiceTableViewCell.swift in Sources */,
+				1250B2F12AF7D7AD00F0288B /* QRViewController.swift in Sources */,
 				12A798D02ACC2A0E007FC284 /* SceneDelegate.swift in Sources */,
+				1250B2D82AF6E04400F0288B /* PaymentsViewController.swift in Sources */,
+				1250B2E82AF7D6FA00F0288B /* AdViewController.swift in Sources */,
 				12A799002AD08368007FC284 /* OfferOfGoodsCollectionViewCell.swift in Sources */,
 				126B88792AED8A5200431400 /* MessageViewController.swift in Sources */,
 				12B9702A2AF1758300CDE1F4 /* ModelService.swift in Sources */,
 				12A799082AD13346007FC284 /* ProductBankItem.swift in Sources */,
+				1250B3112AFA9CCD00F0288B /* MainCollectionViewDelegate.swift in Sources */,
 				12A798FA2ACD95AB007FC284 /* OfferServicesCollectionViewCell.swift in Sources */,
+				1250B2D62AF6D76000F0288B /* MyBankViewController.swift in Sources */,
 				122075F72AEE8F980003215B /* ServiceViewController.swift in Sources */,
+				1250B2DA2AF6E23400F0288B /* TransfersViewController.swift in Sources */,
 				12A7990E2AD70C2F007FC284 /* MessageTabBar.swift in Sources */,
+				1250B3132AFA9F4300F0288B /* ArrayCollectionMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		1250B3182AFABD4700F0288B /* MyBankViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1250B3192AFABD4700F0288B /* Base */,
+			);
+			name = MyBankViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		1250B31B2AFABDB600F0288B /* TransfersViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1250B31C2AFABDB600F0288B /* Base */,
+			);
+			name = TransfersViewController.storyboard;
+			sourceTree = "<group>";
+		};
 		12A798D32ACC2A0E007FC284 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

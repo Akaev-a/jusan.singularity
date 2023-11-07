@@ -10,4 +10,5 @@ import UIKit
 struct ProductBankItem {
     let imageProductBank: UIImage
     let nameProductBank: String
+    let segueIdentifier: String
 }

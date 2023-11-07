@@ -10,4 +10,5 @@ import UIKit
 struct PromotionItem {
     let imagePromo: UIImage
     let dateSale: String
+    let segueIdentifier: String
 }

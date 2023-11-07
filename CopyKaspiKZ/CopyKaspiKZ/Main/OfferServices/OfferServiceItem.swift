@@ -11,4 +11,5 @@ struct OfferServiceItem {
     let imageProduct: UIImage
     let nameProduct: String
     let discriptionProduct: String
+    let segueIdentifier: String
 }

@@ -265,6 +265,21 @@
             </objects>
             <point key="canvasLocation" x="891" y="4"/>
         </scene>
+        <!--Transfers View Controller-->
+        <scene sceneID="cUJ-nG-m2X">
+            <objects>
+                <viewController storyboardIdentifier="TransfersID" id="dKb-DZ-Aet" customClass="TransfersViewController" customModule="CopyKaspiKZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JMq-6h-rkC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WNO-Ij-Ubf"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XEr-eI-iAJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860" y="-782"/>
+        </scene>
         <!--Сервисы-->
         <scene sceneID="GQq-Ke-cas">
             <objects>
@@ -898,21 +913,21 @@
             </objects>
             <point key="canvasLocation" x="4847" y="-782"/>
         </scene>
-        <!--MyBankID-->
-        <scene sceneID="2AR-km-MtH">
+        <!--My Bank View Controller-->
+        <scene sceneID="SGO-4w-e7L">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MyBankID" storyboardName="MyBankViewController" referencedIdentifier="MyBankID" id="inp-sW-kiH" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wjs-Rs-Dw7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="MyBankID" id="DSQ-2e-nbu" customClass="MyBankViewController" customModule="CopyKaspiKZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vhK-xj-gsn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="d33-PH-gUv"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a8l-EA-IVj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6NC-dr-YHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="660" y="-782"/>
-        </scene>
-        <!--TransfersID-->
-        <scene sceneID="7uL-HF-Q1h">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="TransfersID" storyboardName="TransfersViewController" referencedIdentifier="TransfersID" id="Moc-Zy-ezb" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9VH-wC-K7c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1860" y="-782"/>
+            <point key="canvasLocation" x="795" y="-782"/>
         </scene>
     </scenes>
     <resources>
@@ -930,6 +945,9 @@
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -938,6 +956,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
