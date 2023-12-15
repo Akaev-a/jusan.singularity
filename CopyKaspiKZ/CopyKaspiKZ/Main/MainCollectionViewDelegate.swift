@@ -71,92 +71,95 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         }
         
     
+    func perohodyBank(selectedProduct: ProductBankItem) {
+        if selectedProduct.segueIdentifier == "myBank" {
+            if let myBankViewController = storyboard?.instantiateViewController(withIdentifier: "MyBankID") as? MyBankViewController {
+                navigationController?.pushViewController(myBankViewController, animated: true)
+            }
+        }
+        else if selectedProduct.segueIdentifier == "payments" {
+            if let paymentsViewController = storyboard?.instantiateViewController(withIdentifier: "PaymentsID") as? PaymentsViewController {
+                navigationController?.pushViewController(paymentsViewController, animated: true)
+            }
+        }
+        else if selectedProduct.segueIdentifier == "transfers" {
+            if let tranfersViewController = storyboard?.instantiateViewController(withIdentifier: "TransfersID") as? TransfersViewController {
+                navigationController?.pushViewController(tranfersViewController, animated: true)
+            }
+        }
+        else if selectedProduct.segueIdentifier == "shop" {
+            if let shopViewController = storyboard?.instantiateViewController(withIdentifier: "ShopID") as? ShopViewController {
+                navigationController?.pushViewController(shopViewController, animated: true)
+            }
+        }
+        else if selectedProduct.segueIdentifier == "QR" {
+            if let cameraViewController = storyboard?.instantiateViewController(withIdentifier: "QRID") as? CameraViewController {
+                navigationController?.pushViewController(cameraViewController, animated: true)
+            }
+        }
+        else if selectedProduct.segueIdentifier == "gov" {
+            if let govViewController = storyboard?.instantiateViewController(withIdentifier: "GovID") as? GovViewController {
+                navigationController?.pushViewController(govViewController, animated: true)
+            }
+        }
+        else if selectedProduct.segueIdentifier == "travel" {
+            if let travelViewController = storyboard?.instantiateViewController(withIdentifier: "TravelID") as? TravelViewController {
+                navigationController?.pushViewController(travelViewController, animated: true)
+            }
+        }
+        else if selectedProduct.segueIdentifier == "ad" {
+            if let adViewController = storyboard?.instantiateViewController(withIdentifier: "AdID") as? AdViewController {
+                navigationController?.pushViewController(adViewController, animated: true)
+            }
+        }
+    }
     
+    
+    func perehodPromo(selectedPromo: PromotionItem) {
+        if selectedPromo.segueIdentifier == "shop" {
+            if let shopViewController = storyboard?.instantiateViewController(withIdentifier: "ShopID") as? ShopViewController {
+                navigationController?.pushViewController(shopViewController, animated: true)
+            }
+        }
+    }
+    
+    func perehodGoods(selectedGoods: GoodsItem) {
+        if selectedGoods.segueIdentifier == "Ad1" {
+            if let adViewController = storyboard?.instantiateViewController(withIdentifier: "AdID") as? AdViewController {
+                navigationController?.pushViewController(adViewController, animated: true)
+            }
+        }
+    }
+    func perehodOffer(selectedOfferServiceArray: OfferServiceItem) {
+        if selectedOfferServiceArray.segueIdentifier == "myBank" {
+            if let offerServiceController = storyboard?.instantiateViewController(withIdentifier: "MyBankID") as? MyBankViewController {
+                navigationController?.pushViewController(offerServiceController, animated: true)
+            }
+        }
+    }
         // MARK: -
         func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-           
-            let selectedProduct = product[indexPath.item]
-//            let selectedPromo = promo[indexPath.item]
-//            let selectedGoods = goods[indexPath.item]
-//            let selectedOfferServiceArray = offerServiceArray[indexPath.item]
+            if collectionView == productBank {
+                let selectedProduct = product[indexPath.item]
+                perohodyBank(selectedProduct: selectedProduct)
+            }
+            if  collectionView == promotionCollectionView {
+                let selectedPromo = promo[indexPath.item]
+                perehodPromo(selectedPromo: selectedPromo)
+            }
+            if collectionView == offerOfGoods {
+                let selectedGoods = goods[indexPath.item]
+                perehodGoods(selectedGoods: selectedGoods)
+            }
+            if collectionView == offerService {
+                let selectedOfferServiceArray = offerServiceArray[indexPath.item]
+                perehodOffer(selectedOfferServiceArray: selectedOfferServiceArray)
+            }
+                
+                            
             
-            
-            // MARK: - центральное меню с основными банковскими кнопками
-            if selectedProduct.segueIdentifier == "myBank" {
-                if let myBankViewController = storyboard?.instantiateViewController(withIdentifier: "MyBankID") as? MyBankViewController {
-                    navigationController?.pushViewController(myBankViewController, animated: true)
-                }
-            }
-            else if selectedProduct.segueIdentifier == "payments" {
-                if let paymentsViewController = storyboard?.instantiateViewController(withIdentifier: "PaymentsID") as? PaymentsViewController {
-                    navigationController?.pushViewController(paymentsViewController, animated: true)
-                }
-            }
-            else if selectedProduct.segueIdentifier == "transfers" {
-                if let tranfersViewController = storyboard?.instantiateViewController(withIdentifier: "TransfersID") as? TransfersViewController {
-                    navigationController?.pushViewController(tranfersViewController, animated: true)
-                }
-            }
-            else if selectedProduct.segueIdentifier == "shop" {
-                if let shopViewController = storyboard?.instantiateViewController(withIdentifier: "ShopID") as? ShopViewController {
-                    navigationController?.pushViewController(shopViewController, animated: true)
-                }
-            }
-            else if selectedProduct.segueIdentifier == "QR" {
-                if let cameraViewController = storyboard?.instantiateViewController(withIdentifier: "QRID") as? CameraViewController {
-                    navigationController?.pushViewController(cameraViewController, animated: true)
-                }
-            }
-            else if selectedProduct.segueIdentifier == "gov" {
-                if let govViewController = storyboard?.instantiateViewController(withIdentifier: "GovID") as? GovViewController {
-                    navigationController?.pushViewController(govViewController, animated: true)
-                }
-            }
-            else if selectedProduct.segueIdentifier == "travel" {
-                if let travelViewController = storyboard?.instantiateViewController(withIdentifier: "TravelID") as? TravelViewController {
-                    navigationController?.pushViewController(travelViewController, animated: true)
-                }
-            }
-            else if selectedProduct.segueIdentifier == "ad" {
-                if let adViewController = storyboard?.instantiateViewController(withIdentifier: "AdID") as? AdViewController {
-                    navigationController?.pushViewController(adViewController, animated: true)
-                }
-            }
-            
-//            // MARK: - верхняя плашка с предложениями магазина
-//            if collectionView == promotionCollectionView {
-//                if indexPath.item < promo.count {
-//                    let selectedGoods = promo[indexPath.item]
-//                    if selectedPromo.segueIdentifier == "shop" {
-//                        if let shopViewController = storyboard?.instantiateViewController(withIdentifier: "ShopID") as? ShopViewController {
-//                            navigationController?.pushViewController(shopViewController, animated: true)
-//                        }
-//                    }
-//                }
-//            }
 //            // MARK: - услуги сервиса объявлении внизу
-//
-//            if collectionView == offerOfGoods {
-//                if indexPath.item < goods.count {
-//                    let selectedGoods = goods[indexPath.item]
-//                    if selectedGoods.segueIdentifier == "Ad" {
-//                        if let adViewController = storyboard?.instantiateViewController(withIdentifier: "AdID") as? AdViewController {
-//                            navigationController?.pushViewController(adViewController, animated: true)
-//                        }
-//                    }
-//                }
-//            }
-//            // MARK: - банковские продукты: депозиты, кредиты
-//
-//            if selectedOfferServiceArray.segueIdentifier == "myBank" {
-//                 if let offerViewController = storyboard?.instantiateViewController(withIdentifier: "MyBankID") as? MyBankViewController {
-//                     navigationController?.pushViewController(offerViewController, animated: true)
-//                 }
-//             }
-//
-            
-            
-            // MARK: -
+
         }
     }
 
